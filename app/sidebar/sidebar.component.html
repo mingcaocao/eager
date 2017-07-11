@@ -1,0 +1,90 @@
+<div class="logo">
+  <div class="logo-img">
+    <img src="/assets/img/eagersample/eageracademylogo.png" />
+  </div>
+  <div class="logo-normal">
+    <a href="#" class="simple-text">
+                       ..  Eager Academy
+                </a>
+  </div>
+</div>
+
+
+<div class="sidebar-wrapper">
+
+  <div class="user">
+    <div class="photo">
+      <img src="../assets/img/eagersample/chrishanson.png" />
+    </div>
+    <div class="info">
+      <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                        <span>
+                            Chris Hanson
+                            <b class="caret"></b>
+                        </span>
+                    </a>
+      <div class="collapse" id="collapseExample">
+        <ul class="nav">
+          <li>
+            <a href="javascript:void(0)">
+                                    <span class="sidebar-mini">MP</span>
+                                    <span class="sidebar-normal">My Profile</span>
+                                </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+                                    <span class="sidebar-mini">EP</span>
+                                    <span class="sidebar-normal">Edit Profile</span>
+                                </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+                                    <span class="sidebar-mini">S</span>
+                                    <span class="sidebar-normal">Settings</span>
+                                </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="nav-container">
+    <ul class="nav">
+      <li routerLinkActive="active">
+        <a [routerLink]="[menuItems[0].path]">
+                            <i class="{{menuItems[0].icon}}">dashboard</i>
+                            <p>{{menuItems[0].title}}</p>
+                        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a [routerLink]="[menuItems[1].path]">
+                            <i class="{{menuItems[1].icon}}">apps</i>
+                            <p>{{menuItems[1].title}}</p>
+                        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a [routerLink]="[menuItems[2].path]">
+                            <i class="{{menuItems[2].icon}}">settings</i>
+                            <p>{{menuItems[2].title}}</p>
+                        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a [routerLink]="[menuItems[3].path]">
+                            <i class="{{menuItems[3].icon}}">star_rate</i>
+                            <p>{{menuItems[3].title}}</p>
+                        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a [routerLink]="[menuItems[4].path]">
+                            <i class="{{menuItems[4].icon}}">card_giftcard</i>
+                            <p>{{menuItems[4].title}}</p>
+                        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a [routerLink]="[menuItems[5].path]">
+                            <i class="{{menuItems[5].icon}}">devices_other</i>
+                            <p>{{menuItems[5].title}}</p>
+                        </a>
+      </li>
+    </ul>
+  </div>
+</div>

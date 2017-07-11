@@ -1,0 +1,19 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+        <app-progressbar></app-progressbar>
+    </div>
+    <div class="row">
+      <div *ngFor="let subject of subjects" class="col-sm-6 col-lg-4 col-md-6">
+        <app-subject-item [subject]="subject"></app-subject-item>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+        <app-reward-history></app-reward-history>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-md-6">
+        <app-targets></app-targets>
+      </div>
+    </div>
+</div>

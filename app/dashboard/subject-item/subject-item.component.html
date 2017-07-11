@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header card-header-icon" data-background-color="rose">
+    <i class="material-icons">{{subject.icon}}</i>
+  </div>
+  <div class="card-content">
+    <h4 class="card-title">{{subject.title}}</h4>
+    <div class="progress progress-line-info">
+        <div class="progress-bar" [class.progress-bar-danger]="subject.progress < 0.6"
+            [class.progress-bar-warning]="subject.progress < 0.85" [class.progress-bar-primary]="subject.progress < 1.0"
+            [class.progress-bar-success]="subject.progress === 1.0"
+            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [style.width]="subject.progress | percent">
+            <span class="sr-only">60% Complete</span>
+        </div>
+    </div>
+  </div>
+</div>
